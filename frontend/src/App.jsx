@@ -1,4 +1,6 @@
-import React from "react"
+import React from "react";
+import Landing from "./component/landing";
+import './index.css';
 
 
 function App() {
@@ -6,8 +8,8 @@ function App() {
 
   return (
 
-    <div>
-      
+    <div className="min">
+      <Landing/>
     </div>
     
   )
