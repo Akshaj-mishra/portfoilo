@@ -1,5 +1,5 @@
 import backgroundpic from "./backgroundpic.jpg";
 
-export const assets = {
+export const public_assets = {
     backgroundpic
 };
