@@ -1,0 +1,5 @@
+import mypic from "./mypic.jpg";
+
+export const personal_assets = {
+    mypic,
+};
