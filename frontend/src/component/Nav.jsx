@@ -3,7 +3,7 @@ import { assets } from "../assets/assets";
 import {House,GraduationCap,FileUser,Mail,Download,} from "lucide-react";
 
 const SidebarButton = ({ label, icon }) => (
-  <button className="w-48 py-2 px-4 flex items-center gap-4 rounded-lg bg-gray-800 hover:bg-blue-500 transition duration-300">
+  <button className="w-48 py-2 px-4 flex items-center gap-4 rounded-lg bg-gray-800 hover:bg-blue-500 transition duration-300 ">
     {icon}
     <span className="text-sm font-medium">{label}</span>
   </button>
@@ -11,7 +11,7 @@ const SidebarButton = ({ label, icon }) => (
 
 const Nav = () => {
   return (
-    <div className="fixed h-screen w-64 bg-gray-900 text-white flex flex-col items-center py-6 shadow-lg">
+    <div className="fixed h-screen w-64 bg-gray-900 text-white flex flex-col items-center py-6 shadow-lg z-50">
       <img
         src={assets.personal_assets.mypic}
         alt="Profile"

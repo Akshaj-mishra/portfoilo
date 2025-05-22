@@ -3,7 +3,7 @@ import { assets } from '../assets/assets';
 
 export default function Landing() {
   return (
-    <div className="relative w-screen h-screen overflow-hidden">
+    <div className="relative ml-64 w-[calc(100vw-16rem)] h-screen overflow-hidden">
       <img
         src={assets.public_assets.backgroundpic}
         alt="background"
