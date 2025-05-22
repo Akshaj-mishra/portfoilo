@@ -8,9 +8,11 @@ function App() {
   return (
     <div>
       <Nav/>
+      <div>
       <Routes>
         <Route path="/" element={<Hero/>} />
       </Routes>
+      </div>
     </div>
   );
 }

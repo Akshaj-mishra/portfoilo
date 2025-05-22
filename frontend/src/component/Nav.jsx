@@ -19,7 +19,7 @@ const Nav = () => {
       />
 
       <div className="mb-6">
-        <p className="text-lg font-semibold">Akshaj Mishra</p>
+        <p className="text-lg font-semibold">{assets.personal_assets.myname}</p>
       </div>
 
       <nav className="flex flex-col gap-4 w-full items-center">
