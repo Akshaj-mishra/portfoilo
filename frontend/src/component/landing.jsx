@@ -32,7 +32,7 @@ export default function Landing() {
               typeSpeed={100}
               deleteSpeed={90}
               delaySpeed={1000}
-            />{" "}.
+            />
           </span>
         </p>
       </div>
