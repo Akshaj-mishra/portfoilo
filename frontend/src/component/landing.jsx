@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { assets } from '../assets/assets';
 
 export default function Landing() {
-  const titles = [' "Web Developer" ', ' "Gamer" ',' "GOD" '];
+  const titles = [' "Web Developer" ', ' "Student" ',' "Software Developer" '];
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function Landing() {
 
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
         <h1 className=" text-5xl font-bold text-white">
-          Welcome to My Page
+          Hi I am {assets.personal_assets.myname}
         </h1>
 
         <p className="text-white text-4xl mt-6 font-semibold">
