@@ -7,8 +7,7 @@ function Education(){
             <h2 className="text-blue-900 my-4 text-4xl">High School</h2>
             <h2 className="text:4xl text-blue-950">{assets.personal_assets.myschool}</h2>
             <img src={assets.personal_assets.scl_logo} alt = "scl logo here"
-              className="w-38 h-38  border-4 border-white mb-4 object-cover"  
-            />
+              className="w-38 h-38  border-4 border-white mb-4 object-cover"  />
             <ul>
                 <p className="text-2xl text-blue-950 unerline ">10th</p>
                 <ol>
