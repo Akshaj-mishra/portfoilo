@@ -10,7 +10,7 @@ import Down from "./pages/Down";
 
 function App() {
   return (
-    <div>
+    <div className="overflow-x-hidden overflow-y-auto h-screen">
       <Nav />
       <section id="hero">
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
