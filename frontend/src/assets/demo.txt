@@ -18,4 +18,8 @@ export const personal_assets = {
     collegewebsite: "https://vitbhopal.ac.in/",
     sclmail: "gnspatna@rediffmail.com",
     collegemail: "admissions@vitbhopal.ac.in",
+    emailid: "ritikakushwaha62@gmail.com",
+    contact_number: "9569317220",
+    linkedin: "https://www.linkedin.com/in/ritikakushwaha",
+    mail:"mailto:ritikakushwaha62@gmail.com"
 };
