@@ -3,7 +3,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import { assets } from '../assets/assets';
 
 export default function Landing() {
-  const titles = ['Student .', 'Web Developer .', 'Software Developer .'];
+  const titles = ['Student', 'Web Developer', 'Software Developer'];
 
   return (
     <div className="relative ml-64 w-[calc(100vw-16rem)] h-screen overflow-hidden">
@@ -16,9 +16,9 @@ export default function Landing() {
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
         <h1 className="text-5xl font-bold text-white">
           Hello, I'm{' '}
-          <span className="text-blue-300 transition-opacity duration-500">
+          <span className="text-blue-300 transition-opacity duration-500  decoration-blue-300 underline">
             {assets.personal_assets.myname}
-          </span>
+          </span>{" "}.
         </h1>
 
         <p className="text-white text-4xl mt-6 font-semibold">
@@ -32,7 +32,7 @@ export default function Landing() {
               typeSpeed={100}
               deleteSpeed={90}
               delaySpeed={1000}
-            />
+            />{" "}.
           </span>
         </p>
       </div>
