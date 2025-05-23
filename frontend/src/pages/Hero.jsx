@@ -7,7 +7,7 @@ function Hero() {
     <div>
       <Landing/>
       <Education/>
-      {/* <Contact/> */}
+      <Contact/>
     </div>
   )
 }
