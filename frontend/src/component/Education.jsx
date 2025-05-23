@@ -5,7 +5,7 @@ function Education(){
             <>
             <h1 className=" text-6xl flex  text-blue-400 underline ">Education</h1>
             <h2 className="text-blue-900 my-4 text-4xl">High School</h2>
-            <img src={assets.personal_assets.dcl_logo} alt = "scl logo here"
+            <img src={assets.personal_assets.scl_logo} alt = "scl logo here"
               className="w-38 h-38 rounded-full border-4 border-white mb-4 object-cover"  
             />
             </>

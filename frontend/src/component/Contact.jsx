@@ -1,4 +1,4 @@
-import assets from "../assets/assets.jsx"
+import {assets} from "../assets/assets.jsx"
 function Contact(){
     return(
         <div className="relative ml-64 w-[calc(100vw-16rem)] h-screen overflow-hidden">
