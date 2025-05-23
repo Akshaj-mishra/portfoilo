@@ -6,3 +6,5 @@ export const assets = {
     public_assets,
     personal_assets,
 };
+
+export default assets;
