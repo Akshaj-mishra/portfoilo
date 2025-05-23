@@ -1,17 +1,21 @@
 import mypic from "./mypic.jpg";
-import gyanpic from "./scl_logo.jpeg";
+import scl_logo from "./scl_logo.jpeg";
 
 export const personal_assets = {
     mypic,
     scl_logo,
     myname: "Aryan Kumar",
-    myschool: "Gyan Niketan , Patna",
+    myschool: "Gyan Niketan , Patna , Bihar",
     tenth_percentage: 85.8,
     twelth_percentage: 80.2,
-    myuniversity: "VIT Bhopal",
+    myuniversity: "VIT Bhopal University , Bhopal , Madhya Pradesh",
     current_course: "Btech Cse.",
     current_cgpa: 8.20,
-    timing: 2023-2027,
-    tnth_scltiming: 2020,
-    twlth_scltiming: 2022,
+    timing: "2023-2027",
+    tnth_scltiming: "2020",
+    twlth_scltiming: "2022",
+    sclwebsite: "https://www.gyanniketan.in/" ,
+    collegewebsite: "https://vitbhopal.ac.in/",
+    sclmail: "gnspatna@rediffmail.com",
+    collegemail: "admissions@vitbhopal.ac.in",
 };
