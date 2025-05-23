@@ -27,7 +27,7 @@ export default function Landing() {
         </h1>
 
         <p className="text-white text-4xl mt-6 font-semibold">
-          I am <span className="text-blue-400 transition-opacity duration-500">{titles[index]}</span>
+          I am <span className="text-blue-400 transition-opacity duration-500">{titles[index]} .</span>
         </p>
       </div>
     </div>
