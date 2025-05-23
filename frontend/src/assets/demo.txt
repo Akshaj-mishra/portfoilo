@@ -1,6 +1,17 @@
 import mypic from "./mypic.jpg";
+import gyanpic from "./scl_logo.jpeg";
 
 export const personal_assets = {
     mypic,
-    myname: "Akshaj Mishra",
+    scl_logo,
+    myname: "Aryan Kumar",
+    myschool: "Gyan Niketan , Patna",
+    tenth_percentage: 85.8,
+    twelth_percentage: 80.2,
+    myuniversity: "VIT Bhopal",
+    current_course: "Btech Cse.",
+    current_cgpa: 8.20,
+    timing: 2023-2027,
+    tnth_scltiming: 2020,
+    twlth_scltiming: 2022,
 };
