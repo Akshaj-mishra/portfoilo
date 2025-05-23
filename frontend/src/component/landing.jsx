@@ -2,15 +2,15 @@ import React, { useEffect, useState } from 'react';
 import { assets } from '../assets/assets';
 
 export default function Landing() {
-  const titles = [' "Web Developer" ', ' "Student" ',' "Software Developer" '];
+  const titles = ['Web Developer', 'Student', 'Software Developer'];
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % titles.length);
-    }, 1000); 
+    }, 1000);
 
-    return () => clearInterval(interval); 
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -22,14 +22,20 @@ export default function Landing() {
       />
 
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-        <h1 className=" text-5xl font-bold text-white">
-          Hi I am {assets.personal_assets.myname}
+        <h1 className="text-5xl font-bold text-white">
+          Hello, I'm {' '}
+          <span className="text-blue-300 transition-opacity duration-500">
+            {assets.personal_assets.myname}
+          </span>
         </h1>
-
         <p className="text-white text-4xl mt-6 font-semibold">
-          I am <span className="text-blue-400 transition-opacity duration-500">{titles[index]} .</span>
+          I am{' '}
+          <span className="text-blue-400 transition-opacity duration-500">
+            {titles[index]}.
+          </span>
         </p>
       </div>
     </div>
   );
 }
+
