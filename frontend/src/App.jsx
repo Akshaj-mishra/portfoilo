@@ -40,7 +40,7 @@ function App() {
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }}>
           <Down />
         </motion.div>
-      </section>
+      </section> 
     </div>
   );
 }
