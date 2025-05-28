@@ -2,29 +2,49 @@ import React, { useEffect, useState } from "react";
 import { assets } from "../assets/assets";
 import { House, GraduationCap, FileUser, Mail, Download } from "lucide-react";
 
-// Make sure this is defined before the Nav component
-const SidebarButton = ({ label, icon, isActive, onClick }) => (
-  <button
-    onClick={onClick}
-    className={`w-48 py-2 px-4 flex items-center gap-4 rounded-lg transition duration-300 
-      ${isActive ? "bg-blue-500 shadow-lg" : "bg-gray-800 hover:bg-blue-500"}
-    `}
-  >
-    {icon}
-    <span className="text-sm font-medium">{label}</span>
-  </button>
-);
+const SidebarButton = ({ label, icon, isActive, onClick, type, href }) => {
+  if (type === "download") {
+    return (
+      <a
+        href={href}
+        download
+        className="w-48 py-2 px-4 flex items-center gap-4 rounded-lg transition duration-300 bg-gray-800 hover:bg-blue-500"
+      >
+        {icon}
+        <span className="text-sm font-medium">{label}</span>
+      </a>
+    );
+  }
+
+  return (
+    <button
+      onClick={onClick}
+      className={`w-48 py-2 px-4 flex items-center gap-4 rounded-lg transition duration-300 
+        ${isActive ? "bg-blue-500 shadow-lg" : "bg-gray-800 hover:bg-blue-500"}
+      `}
+    >
+      {icon}
+      <span className="text-sm font-medium">{label}</span>
+    </button>
+  );
+};
 
 const sections = [
   { id: "hero", label: "Home", icon: <House size={20} /> },
   { id: "education", label: "Education", icon: <GraduationCap size={20} /> },
   { id: "resume", label: "Resume", icon: <FileUser size={20} /> },
   { id: "contact", label: "Contact Us", icon: <Mail size={20} /> },
-  { id: "download", label: "Download CV", icon: <Download size={20} /> },
+  {
+    id: "download",
+    label: "Download CV",
+    icon: <Download size={20} />,
+    type: "download",
+    href: assets.personal_assets.resume,
+  },
 ];
 
 const Nav = () => {
-  const [activeSection, setActiveSection] = useState("home");
+  const [activeSection, setActiveSection] = useState("hero");
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -38,8 +58,8 @@ const Nav = () => {
       { threshold: 0.5 }
     );
 
-    sections.forEach((section) => {
-      const el = document.getElementById(section.id);
+    sections.forEach(({ id }) => {
+      const el = document.getElementById(id);
       if (el) observer.observe(el);
     });
 
@@ -64,13 +84,15 @@ const Nav = () => {
         <p className="text-lg font-semibold">{assets.personal_assets.myname}</p>
       </div>
       <nav className="flex flex-col gap-4 w-full items-center">
-        {sections.map(({ id, label, icon }) => (
+        {sections.map(({ id, label, icon, type, href }) => (
           <SidebarButton
             key={id}
             label={label}
             icon={icon}
             isActive={activeSection === id}
             onClick={() => scrollToSection(id)}
+            type={type}
+            href={href}
           />
         ))}
       </nav>

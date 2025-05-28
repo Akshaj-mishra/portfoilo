@@ -36,11 +36,11 @@ function App() {
         </motion.div>
       </section>
 
-      <section id="download">
+      {/* <section id="download">
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }}>
           <Down />
         </motion.div>
-      </section> 
+      </section>  */}
     </div>
   );
 }

@@ -1,10 +1,12 @@
 import mypic from "./mypic.jpg";
-import scl_logo from "./scl_logo.jpeg";
+import scl_logo from "./scl_logo.jpg";
+import resume from "./resume.pdf";
 
 export const personal_assets = {
     mypic,
     scl_logo,
-    myname: "Aryan Kumar",
+    resume,
+    myname: "Akshaj Mishra",
     myschool: "Gyan Niketan , Patna , Bihar",
     tenth_percentage: 85.8,
     twelth_percentage: 80.2,
@@ -21,5 +23,6 @@ export const personal_assets = {
     emailid: "ritikakushwaha62@gmail.com",
     contact_number: "9569317220",
     linkedin: "https://www.linkedin.com/in/ritikakushwaha",
-    mail:"mailto:ritikakushwaha62@gmail.com"
+    mail:"mailto:ritikakushwaha62@gmail.com",
+    
 };
