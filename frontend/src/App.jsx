@@ -6,7 +6,6 @@ import Edu from "./pages/Edu";
 import Res from "./pages/Res";
 import Cont from "./pages/Cont";
 import "./index.css";
-import Down from "./pages/Down";
 
 function App() {
   return (
@@ -36,11 +35,6 @@ function App() {
         </motion.div>
       </section>
 
-      {/* <section id="download">
-        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }}>
-          <Down />
-        </motion.div>
-      </section>  */}
     </div>
   );
 }
