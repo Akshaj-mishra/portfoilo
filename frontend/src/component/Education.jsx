@@ -2,7 +2,7 @@ import { assets } from "../assets/assets.jsx";
 
 function Education() {
   return (
-    <div className="ml-16 items-center justify-center min-h-screen bg-white px-4 py-8 relative w-[calc(100vw-4rem)] h-screen overflow-auto">
+    <div className="ml-16 items-center justify-center min-h-screen  px-4 py-8 relative w-[calc(100vw-4rem)] h-screen overflow-auto bg-gray-100">
       <div className="mx-auto w-full max-w-4xl bg-white shadow-md rounded-lg p-6 border border-gray-200">
         <h1 className="text-4xl font-bold text-blue-500 mb-8 text-center underline">Education</h1>
 
@@ -17,12 +17,12 @@ function Education() {
             <h3 className="text-xl font-bold text-blue-950">{assets.personal_assets.myschool}</h3>
             <div className="flex flex-wrap items-center gap-2 text-sm mt-2 text-blue-600">
               <a
-                href={assets.personal_assets.collegewebsite}
+                href={assets.personal_assets.sclwebsite}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline hover:text-blue-800"
               >
-                {assets.personal_assets.collegewebsite}
+                {assets.personal_assets.sclwebsite}
               </a>
               <span className="text-blue-400">|</span>
               <a
