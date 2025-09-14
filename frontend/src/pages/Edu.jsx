@@ -2,7 +2,7 @@ import React from 'react'
 import Education from "../component/Education";
 function Edu() {
   return (
-    <div>
+    <div >
         <Education/>
     </div>
   )
